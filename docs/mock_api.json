@@ -1,0 +1,96 @@
+{
+    "articles": {
+        "create": {
+            "method": "POST",
+            "url": "/api/v1/articles/create",
+            "description": "Tạo mới bài viết"
+        },
+        "getDetail": {
+            "method": "GET",
+            "url": "/api/v1/articles/{id}",
+            "description": "Lấy chi tiết bài viết theo ID"
+        },
+        "update": {
+            "method": "PUT",
+            "url": "/api/v1/articles/{id}",
+            "description": "Cập nhật bài viết"
+        }
+    },
+    "categories": {
+        "getList": {
+            "method": "GET",
+            "url": "/api/v1/categories",
+            "description": "Lấy danh sách danh mục"
+        },
+        "create": {
+            "method": "POST",
+            "url": "/api/v1/categories",
+            "description": "Thêm danh mục mới"
+        }
+    },
+    "search": {
+        "findArticles": {
+            "method": "GET",
+            "url": "/api/v1/articles/search",
+            "description": "Tìm kiếm bài viết với các tham số như keyword, category, sort"
+        }
+    },
+    "comments": {
+        "add": {
+            "method": "POST",
+            "url": "/api/v1/articles/{id}/comments",
+            "description": "Thêm bình luận cho bài viết"
+        },
+        "getList": {
+            "method": "GET",
+            "url": "/api/v1/articles/{id}/comments",
+            "description": "Lấy danh sách bình luận"
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": "/api/v1/comments/{id}",
+            "description": "Xóa bình luận"
+        }
+    },
+    "auth": {
+        "login": {
+            "method": "POST",
+            "url": "/api/v1/auth/login",
+            "description": "Đăng nhập"
+        }
+    },
+    "users": {
+        "register": {
+            "method": "POST",
+            "url": "/api/v1/register",
+            "description": "Đăng ký người dùng mới"
+        },
+        "profile": {
+            "method": "GET",
+            "url": "/api/v1/users/profile",
+            "description": "Xem thông tin cá nhân"
+        },
+        "update": {
+            "method": "PUT",
+            "url": "/api/v1/users/{id}",
+            "description": "Cập nhật thông tin cá nhân"
+        }
+    },
+    "tags": {
+        "getList": {
+            "method": "GET",
+            "url": "/api/v1/tags",
+            "description": "Lấy danh sách thẻ"
+        },
+        "create": {
+            "method": "POST",
+            "url": "/api/v1/tags",
+            "description": "Tạo thẻ mới"
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": "/api/v1/tags/{id}",
+            "description": "Xóa thẻ"
+        }
+    }
+}
